@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TODO } from './todo';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularlab';
+  toDo: TODO[] = [
+    {
+      task: "Wash the dishes",
+      completed: false
+    },
+    {
+      task: "Pay bills",
+      completed: true
+    },
+    {
+      task: "Walk the dog",
+      completed: false
+    },
+    {
+      task: "Buy groceries",
+      completed: true
+    }
+  ]
 }
